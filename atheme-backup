@@ -1,0 +1,13 @@
+#!/bin/sh
+
+directory="/home/.atheme-backup/check-run-setup"
+
+if [ -d $directory ]; then
+echo "Atheme Database Backup"
+echo "Backing up databases..."
+rm $HOME/Atheme-Backup/services.db
+cp $HOME/atheme/etc/services.db $HOME/Atheme-Backup/services.db
+echo "done"
+else 
+	echo "You Didn't run the setup script like you were supposed to did you?"
+fi 

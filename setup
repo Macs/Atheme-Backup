@@ -1,0 +1,19 @@
+#!/bin/sh
+
+echo "Installing Atheme-Backup..."
+cd ~/
+echo "Done"
+echo "Creating Files"
+mkdir Atheme-Backup
+cp $HOME/Atheme-Backup-0.1.0/backup.sh ~/Atheme-Backup
+cp $HOME/Atheme-Backup-0.1.0/services.db ~/Atheme-Backup
+mkdir /home/.atheme-backup
+mkdir /home/.atheme-backup/check-run-setup
+echo "Done"
+echo "Removing install files"
+rm ~/Atheme-Backup-0.1.0
+echo "Done"
+echo "Entering $HOME/Atheme-Backup"
+cd $HOME/Atheme-Backup
+echo "Done"
+echo "Atheme-Backup is now installed"
